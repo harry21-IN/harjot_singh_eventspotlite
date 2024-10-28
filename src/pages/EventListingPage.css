@@ -7,9 +7,9 @@
   /* Grid layout for event cards */
   .event-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 50px; 
-    padding: 100px 30px; 
+    padding: 100px 20px; 
   
   }
   
@@ -110,4 +110,7 @@
   }
 }
 
+@media(max-width: 768px) {
+
+}
   
