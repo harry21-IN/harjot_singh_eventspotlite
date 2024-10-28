@@ -7,7 +7,7 @@
   /* Grid layout for event cards */
   .event-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 50px; 
     padding: 100px 20px; 
   
