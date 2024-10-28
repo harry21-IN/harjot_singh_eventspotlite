@@ -1,0 +1,124 @@
+/* Basic styling for the navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(0,0,0,0.5);
+  color: color;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+/* Logo section */
+.navbar-logo h1 {
+  font-family: var(--site-font);
+  font-size: 24px; 
+  color: white;
+  margin: 0;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Search input styling */
+.navbar-search {
+  flex-grow: 1; 
+  justify-content: center;
+  display: flex;
+}
+
+.navbar-search input {
+  background-color: rgba(0,0,0,0.7);
+  font-family: var(--site-font);
+  width: 50%; 
+  padding: 7px 15px;
+  color: rgba(255,255,255,0.7);
+  border: 1px solid rgba(255,255,255,0.1); 
+  border-radius: 4px; 
+  font-size: 16px; 
+  transition: box-shadow 0.3s ease; 
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px; 
+  margin-left: 15px;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+/* Focus styling for the input */
+.navbar-search input:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0,0,0, 0.7); 
+}
+
+/* Optional styling for hover effects on the input */
+.navbar-search input:hover {
+  background-color: rgba(0,0,0,0.7); 
+}
+.navbar-search input:focus {
+  background-color: rgba(0,0,0,0.7); 
+}
+
+/* Optional styles for the theme toggle button */
+.theme-toggle:hover {
+  color: #999; 
+}
+
+@media (max-width: 1024px) { /* Tablet and below */
+  .navbar {
+    align-items: center;
+    gap: 200px;
+    justify-content: center;
+  }
+  .navbar-logo h1 {
+    font-family: var(--site-font);
+    font-size: 24px; 
+    color: white;
+    text-wrap: nowrap;
+    margin: 0;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .navbar-search {
+    width: 100%; 
+    margin-top: 10px; 
+  }
+
+  .navbar-search input {
+    width: 100%; 
+    margin-right: 0; 
+  }
+
+  .theme-toggle {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) { /* Mobile devices */
+  .navbar {
+    display: flex;
+    background-color: black;
+    padding: 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-logo h1 {
+    font-size: 20px; 
+  }
+
+
+  .theme-toggle {
+    display: none;
+  }
+}

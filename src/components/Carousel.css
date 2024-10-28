@@ -1,0 +1,73 @@
+/* Container for the carousel */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-top: -60px;
+    max-height: 100vh;
+  }
+  
+  /* Inner container for images */
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  /* Individual carousel items */
+  .carousel-item {
+    min-width: 100%;
+  }
+  
+  /* Carousel images */
+  .carousel-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* Navigation buttons */
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 20px;
+    z-index: 1; 
+    font-size: 50px;
+    color: rgba(0,0,0,0.5);
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Positioning the previous button */
+  .carousel-button.prev {
+    left: 10px;
+  }
+  
+  /* Positioning the next button */
+  .carousel-button.next {
+    right: 10px;
+  }
+  
+  /* Hover effect for buttons */
+  .carousel-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+
+  @media (max-width: 1024px) {
+    .carousel{
+      margin-top: -80px;
+    }
+    .carousel-image {
+      max-height: 100vh;
+      object-fit: cover;
+    }
+  }
+  @media (max-width: 768px) {
+    .carousel{
+      margin-top: 0px;
+    }
+  }

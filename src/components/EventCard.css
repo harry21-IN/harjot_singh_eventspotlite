@@ -1,0 +1,60 @@
+/* Main event card container */
+.event-card {
+    border-radius: 1rem;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    border: none;
+}
+
+/* Dark overlay for text readability */
+.event-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+/* Event details container */
+.event-card-details {
+    z-index: 2;
+    padding: 16px;
+    text-align: center;
+    color: #fff;
+    font-family: var(--site-font);
+}
+
+/* Event title styling */
+.event-card h3 {
+    font-size: 1.25rem;
+    margin: 8px 0;
+    font-weight: 600;
+}
+
+/* Date and location styling */
+.event-card p {
+    font-size: 0.9rem;
+    margin: 4px 0;
+    color: #c5c3c3;
+    font-weight: 300;
+}
+
+/* Hover effect */
+.event-card:hover {
+    transform:translateY(-20px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
